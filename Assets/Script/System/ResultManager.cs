@@ -8,15 +8,21 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class ResultManager : MonoBehaviour
 {
+    // 変数
+    [SerializeField] private TextMeshProUGUI ScoreText;     // スコア表示用テキスト
+
     //=========================================================
     // 初期化
     //=========================================================
     void Start()
     {
-        
+        // スコアの値を受け取って入れる 今は仮置き
+        int nTest = 500;
+        ScoreText.text = nTest.ToString();
     }
 
     //=========================================================
