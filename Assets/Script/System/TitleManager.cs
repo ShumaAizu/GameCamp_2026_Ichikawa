@@ -49,7 +49,7 @@ public class TitleManager : MonoBehaviour
     //=========================================================
     // シーン変更
     //=========================================================
-    public void SceneChange()
+    private void SceneChange()
     {
         // 現在のシーン番号に1を足した数字を持っておく
         int nSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;

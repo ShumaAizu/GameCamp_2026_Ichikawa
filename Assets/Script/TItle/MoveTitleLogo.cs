@@ -4,6 +4,7 @@
 // Author : SHUMA AIZU
 //
 //*************************************************************
+
 using UnityEngine;
 
 public class MoveTitleLogo : MonoBehaviour
@@ -28,6 +29,8 @@ public class MoveTitleLogo : MonoBehaviour
     //=========================================================
     void Update()
     {
+        // –Y‚ê‚Ä‚­‚¾‚³‚¢
+#if false
         // Œ»İ‚Ìó‘Ô‚ğæ“¾
         TitleManager.STATE state = manager.GetState();
 
@@ -41,5 +44,6 @@ public class MoveTitleLogo : MonoBehaviour
                 transform.Translate(0.0f, -fSpeed, 0.0f);
             }
         }
+#endif
     }
 }
