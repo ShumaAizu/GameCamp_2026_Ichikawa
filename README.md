@@ -1,2 +1,2 @@
 # GameCamp_2026_Ichikawa
-kumagai
+kumagai test
