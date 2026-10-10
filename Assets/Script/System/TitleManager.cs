@@ -8,7 +8,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-
 public class TitleManager : MonoBehaviour
 {
     //=========================================================
@@ -39,11 +38,13 @@ public class TitleManager : MonoBehaviour
     //=========================================================
     void Update()
     {
+#if false
         if (Mouse.current.leftButton.isPressed)
         {// 左クリックが押されたら
             // シーン変更
             SceneChange();
         }
+#endif
     }
 
     //=========================================================
