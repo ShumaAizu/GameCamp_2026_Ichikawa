@@ -49,15 +49,16 @@ MonoBehaviour:
   - {fileID: 8172392793677451969, guid: 1937ff73f0bc34d46a99cffd14f67436, type: 3}
   - {fileID: 1519314895125864494, guid: 778d7105993a3b64eacf878db07f4144, type: 3}
   - {fileID: 5667975754348708286, guid: 29f953e4e2f405e4eaf093137d7ca86f, type: 3}
-  EnemyPosition:
-  - {x: 400, y: 900}
-  - {x: 150, y: 575}
-  - {x: 1650, y: 925}
-  - {x: 1475, y: 650}
-  - {x: 1750, y: 500}
+  - {fileID: 6203857884302839662, guid: 642c41f80648bba41b875c05477e9cf0, type: 3}
   EnemyCpy:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  EnemyPosition:
+  - {x: 400, y: 900}
+  - {x: 150, y: 575}
+  - {x: 1650, y: 925}
+  - {x: 1475, y: 650}
+  - {x: 1750, y: 500}
