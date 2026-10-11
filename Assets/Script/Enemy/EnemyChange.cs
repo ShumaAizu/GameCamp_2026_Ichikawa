@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 
 public class EnemyChange : MonoBehaviour
 {
@@ -8,11 +9,20 @@ public class EnemyChange : MonoBehaviour
     [SerializeField] private GameObject _lockimage;
     [SerializeField] private float _waittime;
     [SerializeField] private float _fadetime;
+    private ScoreDisplay _scoreDisplay;
     private SpriteRenderer _spriteRenderer;
     private int _crickcount = 0;
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
+
+        GameObject _scoreObj = GameObject.Find("ScoreText");
+        if( _scoreObj != null)
+        {
+            _scoreDisplay    = _scoreObj.GetComponent<ScoreDisplay>();
+        }
+
+
         if(_lockimage  != null)
         {
             _lockimage.SetActive(false);
@@ -34,6 +44,10 @@ public class EnemyChange : MonoBehaviour
             if (_nextSprite != null && _spriteRenderer != null)
             {
                 _spriteRenderer.sprite = _nextSprite;
+                if( _scoreDisplay != null)
+                {
+                    _scoreDisplay.AddScore(300);
+                }
             }
             if( _lockimage != null)
             {
