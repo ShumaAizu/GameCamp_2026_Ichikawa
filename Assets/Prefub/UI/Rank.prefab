@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 75, y: 75, z: 1}
+  m_LocalScale: {x: 135, y: 135, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 2235751542185814367, guid: db5745f76f169b5428ba16a5bfe723c3, type: 3}
+  m_Sprite: {fileID: 3218892345885566256, guid: c5e83e491f9073441921d8bcb4390a65, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,9 +104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f4e1c6408ef2a74e99d54dcd74e74ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RankSetting
-  Rank1Sprite: {fileID: 840512974470498795, guid: bd4fee3533bb9444ca4b4b537f0aefba, type: 3}
-  Rank2Sprite: {fileID: 7420985886813182627, guid: 1e6367abf9b43c945b14d7b7e590a83e, type: 3}
-  Rank3Sprite: {fileID: 2235751542185814367, guid: db5745f76f169b5428ba16a5bfe723c3, type: 3}
+  Rank1Sprite: {fileID: -3758179234668752721, guid: 3ea42db6686e00247a36d2609e9ab922, type: 3}
+  Rank2Sprite: {fileID: -8336952780233652112, guid: 9b369a1fa64240a45a9d5f96a4bedc43, type: 3}
+  Rank3Sprite: {fileID: 3218892345885566256, guid: c5e83e491f9073441921d8bcb4390a65, type: 3}
   nRank1Score: 500
   nRank2Score: 250
   nRank3Score: 0
