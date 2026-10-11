@@ -27,10 +27,16 @@ public class RankSetting : MonoBehaviour
     //=========================================================
     void Start()
     {
+
+    }
+
+    //=========================================================
+    // 生成時
+    //=========================================================
+    private void Awake()
+    {
         // このobjectのSpriteRendererを取得
         MainSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-
-        Debug.Log("a");
     }
 
     //=========================================================
@@ -46,8 +52,6 @@ public class RankSetting : MonoBehaviour
     //=========================================================
     public void SetRank(int nScore)
     {
-        Debug.Log(nScore);
-
         // それぞれのスコアに合わせてテクスチャ変更
         if(nRank1Score <= nScore)
         {// 一番上のランク

@@ -26,8 +26,8 @@ public class ResultManager : MonoBehaviour
         int nTest = 1000;
         ScoreText.text = nTest.ToString();
 
+        // ランクオブジェクトの設定
         CreateRank = Instantiate(Rank, new Vector3(250.0f, 250.0f, 0.0f), new Quaternion(0.0f, 0.0f, 0.0f, 0.0f));
-
         RankSetting rankSetting = CreateRank.GetComponent<RankSetting>();
         rankSetting.SetRank(nTest);
     }
