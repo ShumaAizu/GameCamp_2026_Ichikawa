@@ -15,9 +15,7 @@ public class ResultManager : MonoBehaviour
     // 変数
     [SerializeField] private TextMeshProUGUI ScoreText;     // スコア表示用テキスト
     [SerializeField] private GameObject Rank;               // ランク
-    [SerializeField] private float fRankPositionX;          // X座標
-    [SerializeField] private float fRankPositionY;          // Y座標
-    private GameObject CreateRank;                          // コピー用変数
+    private GameObject CreateRank;
 
     //=========================================================
     // 初期化
@@ -28,8 +26,8 @@ public class ResultManager : MonoBehaviour
         int nTest = 1000;
         ScoreText.text = nTest.ToString();
 
-        // ランクオブジェクトを生成
-        CreateRank = Instantiate(Rank, new Vector3(fRankPositionX, fRankPositionY, 0.0f), new Quaternion(0.0f, 0.0f, 0.0f, 0.0f));
+        CreateRank = Instantiate(Rank, new Vector3(250.0f, 250.0f, 0.0f), new Quaternion(0.0f, 0.0f, 0.0f, 0.0f));
+
         RankSetting rankSetting = CreateRank.GetComponent<RankSetting>();
         rankSetting.SetRank(nTest);
     }
