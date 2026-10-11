@@ -838,6 +838,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ResultManager
   ScoreText: {fileID: 825447246}
   Rank: {fileID: 8233592801571476636, guid: fd98d0f96c3d1cf46bcc1f88728915a2, type: 3}
+  fRankPositionX: 250
+  fRankPositionY: 250
 --- !u!1 &952241739
 GameObject:
   m_ObjectHideFlags: 0
