@@ -22,14 +22,20 @@ public class RankSetting : MonoBehaviour
     [SerializeField] private int nRank2Score;
     [SerializeField] private int nRank3Score;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    //=========================================================
+    // 初期設定
+    //=========================================================
     void Start()
     {
         // このobjectのSpriteRendererを取得
         MainSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+
+        Debug.Log("a");
     }
 
-    // Update is called once per frame
+    //=========================================================
+    // 更新
+    //=========================================================
     void Update()
     {
         
@@ -40,17 +46,19 @@ public class RankSetting : MonoBehaviour
     //=========================================================
     public void SetRank(int nScore)
     {
+        Debug.Log(nScore);
+
         // それぞれのスコアに合わせてテクスチャ変更
         if(nRank1Score <= nScore)
-        {
+        {// 一番上のランク
             MainSpriteRenderer.sprite = Rank1Sprite;
         }
         else if(nRank2Score <= nScore)
-        {
+        {// 真ん中のランク
             MainSpriteRenderer.sprite = Rank2Sprite;
         }
         else if (nRank3Score <= nScore)
-        {
+        {// 一番下のランク
             MainSpriteRenderer.sprite = Rank3Sprite;
         }
     }

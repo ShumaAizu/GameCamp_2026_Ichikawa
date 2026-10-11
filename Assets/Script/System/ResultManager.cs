@@ -15,6 +15,7 @@ public class ResultManager : MonoBehaviour
     // 変数
     [SerializeField] private TextMeshProUGUI ScoreText;     // スコア表示用テキスト
     [SerializeField] private GameObject Rank;               // ランク
+    private GameObject CreateRank;
 
     //=========================================================
     // 初期化
@@ -22,10 +23,13 @@ public class ResultManager : MonoBehaviour
     void Start()
     {
         // スコアの値を受け取って入れる 今は仮置き
-        int nTest = 100;
+        int nTest = 1000;
         ScoreText.text = nTest.ToString();
 
-        Rank.GetComponent<RankSetting>().SetRank(nTest);
+        CreateRank = Instantiate(Rank, new Vector3(250.0f, 250.0f, 0.0f), new Quaternion(0.0f, 0.0f, 0.0f, 0.0f));
+
+        RankSetting rankSetting = CreateRank.GetComponent<RankSetting>();
+        rankSetting.SetRank(nTest);
     }
 
     //=========================================================
@@ -33,7 +37,7 @@ public class ResultManager : MonoBehaviour
     //=========================================================
     void Update()
     {
-#if true
+#if false
         if (Mouse.current.leftButton.isPressed)
         {// 左クリックが押されたら
             // シーン変更
