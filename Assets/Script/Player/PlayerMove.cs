@@ -33,7 +33,7 @@ public class PlayerMove : MonoBehaviour
         float y = _moveAction.ReadValue<float>();
         rb.linearVelocity = new Vector2(rb.linearVelocity.x,  y * _playerspeed);
 
-        CheckGround();
+        //CheckGround();
     }
 
     private void CheckGround()
