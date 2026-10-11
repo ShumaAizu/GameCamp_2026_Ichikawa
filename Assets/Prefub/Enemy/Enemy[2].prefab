@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3040110244420680764}
   - component: {fileID: 8110916060259330069}
   - component: {fileID: 4718153934778961294}
+  - component: {fileID: 2917057152044349130}
   - component: {fileID: 8107789744119426517}
   - component: {fileID: 2891883693365297298}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 'Enemy[2]'
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -126,6 +127,20 @@ MonoBehaviour:
   _lockimage: {fileID: 7432922062414428040}
   _waittime: 0.5
   _fadetime: 1
+--- !u!114 &2917057152044349130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5412931000223140817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742035a314758ee4bb174ee4171074b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
+  _enemyball: {fileID: 1754182273799399622, guid: 017707cc6a814a34a9bcfabb7ed6d931, type: 3}
+  _interval: 2
 --- !u!50 &8107789744119426517
 Rigidbody2D:
   serializedVersion: 5
@@ -209,7 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4412809523992439236}
   - component: {fileID: 1487917903020723224}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LockImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
