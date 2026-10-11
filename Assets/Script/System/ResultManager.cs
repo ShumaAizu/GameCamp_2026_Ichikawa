@@ -23,7 +23,7 @@ public class ResultManager : MonoBehaviour
     void Start()
     {
         // スコアの値を受け取って入れる 今は仮置き
-        int nTest = 1000;
+        int nTest = LastScore.FinalScore;
         ScoreText.text = nTest.ToString();
 
         // ランクオブジェクトの設定
