@@ -9,14 +9,19 @@ using UnityEngine;
 
 public class TitleEnemySetter : MonoBehaviour
 {
-    [SerializeField] private Vector2[] EnemyPosition;
+    // •Ï”
+    [SerializeField] private GameObject[] Enemy;            // “G‚Ìí—Ş•ª
+    [SerializeField] private Vector2[] EnemyPosition;       // ˆÊ’u
 
     //=========================================================
     // ‰Šúİ’è
     //=========================================================
     void Start()
     {
-        
+        for(int nCnt = 0; nCnt < EnemyPosition.Length; nCnt++)
+        {
+            Create(nCnt);
+        }
     }
 
     //=========================================================
@@ -27,5 +32,15 @@ public class TitleEnemySetter : MonoBehaviour
         
     }
 
+    //=========================================================
+    // “Gİ’è
+    //=========================================================
+    private void Create(int nIdx)
+    {
+        // ƒ‰ƒ“ƒ_ƒ€‚Èí—Ş‚É
+        int nTypeIdx = Random.Range(0, Enemy.Length);
 
+        // “G‚ğ¶¬
+        Instantiate(Enemy[nTypeIdx], EnemyPosition[nIdx], new Quaternion(0.0f, 0.0f, 0.0f, 0.0f));
+    }
 }
