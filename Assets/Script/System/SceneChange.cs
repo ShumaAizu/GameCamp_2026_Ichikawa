@@ -10,13 +10,17 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    //=========================================================
+    // èâä˙âª
+    //=========================================================
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    //=========================================================
+    // çXêV
+    //=========================================================
     void Update()
     {
         
