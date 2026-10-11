@@ -1105,7 +1105,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1128370593
 SpriteRenderer:
   serializedVersion: 2
@@ -1380,6 +1380,10 @@ PrefabInstance:
     - target: {fileID: 3138244654666285870, guid: 7aa2763e3682ae241a47184793808f7c, type: 3}
       propertyPath: m_Name
       value: 'TitleEnemy[1]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3138244654666285870, guid: 7aa2763e3682ae241a47184793808f7c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1802,7 +1806,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1522296601
 SpriteRenderer:
   serializedVersion: 2
@@ -2026,7 +2030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1651636645
 SpriteRenderer:
   serializedVersion: 2
@@ -2122,7 +2126,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &2061472046
 SpriteRenderer:
   serializedVersion: 2
