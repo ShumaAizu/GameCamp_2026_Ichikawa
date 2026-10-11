@@ -55,3 +55,9 @@ MonoBehaviour:
   - {x: 1650, y: 925}
   - {x: 1475, y: 650}
   - {x: 1750, y: 500}
+  EnemyCpy:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
