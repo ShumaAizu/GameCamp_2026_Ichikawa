@@ -107,6 +107,6 @@ MonoBehaviour:
   Rank1Sprite: {fileID: 840512974470498795, guid: bd4fee3533bb9444ca4b4b537f0aefba, type: 3}
   Rank2Sprite: {fileID: 7420985886813182627, guid: 1e6367abf9b43c945b14d7b7e590a83e, type: 3}
   Rank3Sprite: {fileID: 2235751542185814367, guid: db5745f76f169b5428ba16a5bfe723c3, type: 3}
-  nRank1Score: 500
-  nRank2Score: 250
+  nRank1Score: 1500
+  nRank2Score: 1250
   nRank3Score: 0
