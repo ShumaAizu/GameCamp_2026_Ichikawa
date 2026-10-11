@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 7928781440163872386}
   m_Layer: 0
   m_Name: 'Enemy[1]'
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -217,7 +217,6 @@ MonoBehaviour:
   _lockimage: {fileID: 461236822410022318}
   _waittime: 0.5
   _fadetime: 1
-  _scoretext: {fileID: 0}
 --- !u!50 &1036486158202970288
 Rigidbody2D:
   serializedVersion: 5

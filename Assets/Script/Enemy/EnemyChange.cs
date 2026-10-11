@@ -12,14 +12,33 @@ public class EnemyChange : MonoBehaviour
     private ScoreDisplay _scoreDisplay;
     private SpriteRenderer _spriteRenderer;
     private int _crickcount = 0;
+    private Animator _playeranimator;
+    private int _enemyscore = 300;
+    private int _itemscore = 100;
+    private int GetScoreByTag()
+    {
+        if (CompareTag("Enemy"))
+        {
+            return _enemyscore;
+        }
+        else
+        {
+            return _itemscore;
+        }
+    }
     private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
 
+        GameObject gameObject = GameObject.FindGameObjectWithTag("Player");
+        if (gameObject != null)
+        {
+            _playeranimator = gameObject.GetComponent<Animator>();
+        }
         GameObject _scoreObj = GameObject.Find("ScoreText");
         if( _scoreObj != null)
         {
-            _scoreDisplay    = _scoreObj.GetComponent<ScoreDisplay>();
+            _scoreDisplay = _scoreObj.GetComponent<ScoreDisplay>();
         }
 
 
@@ -46,12 +65,16 @@ public class EnemyChange : MonoBehaviour
                 _spriteRenderer.sprite = _nextSprite;
                 if( _scoreDisplay != null)
                 {
-                    _scoreDisplay.AddScore(300);
+                    _scoreDisplay.AddScore(GetScoreByTag());
                 }
             }
             if( _lockimage != null)
             {
                 _lockimage.SetActive(false);
+            }
+            if(_playeranimator != null)
+            {
+                _playeranimator.Play("PlayerAttackAnimation");
             }
             StartCoroutine(FadeAndDestroy());
         }
