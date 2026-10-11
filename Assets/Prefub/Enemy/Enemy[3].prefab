@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8518573366587584273}
   - component: {fileID: 3128841928241288701}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LockImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 94382122453765612, guid: aa823769a342f93439565799ea80dd54, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
@@ -103,9 +103,10 @@ GameObject:
   - component: {fileID: 4735478988113689476}
   - component: {fileID: 280319259461774723}
   - component: {fileID: 7262912426607284441}
+  - component: {fileID: 1946100226241019185}
   - component: {fileID: 2403247560137791888}
   - component: {fileID: 5997496744309334555}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 'Enemy[3]'
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -175,7 +176,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 94382122453765612, guid: aa823769a342f93439565799ea80dd54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -217,6 +218,20 @@ MonoBehaviour:
   _lockimage: {fileID: 786645603935148457}
   _waittime: 0.5
   _fadetime: 1
+--- !u!114 &1946100226241019185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519314895125864494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 742035a314758ee4bb174ee4171074b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
+  _enemyball: {fileID: 1754182273799399622, guid: 017707cc6a814a34a9bcfabb7ed6d931, type: 3}
+  _interval: 2
 --- !u!50 &2403247560137791888
 Rigidbody2D:
   serializedVersion: 5

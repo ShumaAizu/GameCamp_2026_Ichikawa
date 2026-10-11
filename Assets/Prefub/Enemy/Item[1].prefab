@@ -79,7 +79,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2303310450168725726, guid: bde5cf31cc2160f43a62944a4736c3fd, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
@@ -175,7 +175,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2303310450168725726, guid: bde5cf31cc2160f43a62944a4736c3fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -201,8 +201,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyChange
   _nextSprite: {fileID: 7315807542088672758, guid: 857185364c82493478f7f204e2d49db5, type: 3}
   _lockimage: {fileID: 4538837789183652222}
-  _waittime: 0
-  _fadetime: 0
+  _waittime: 0.5
+  _fadetime: 1
 --- !u!114 &2402796581104024856
 MonoBehaviour:
   m_ObjectHideFlags: 0
