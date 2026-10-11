@@ -6,6 +6,8 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float _playerspeed;
     private Rigidbody2D rb;
     private InputAction _moveAction;
+    [SerializeField] private float _maxposition;
+    [SerializeField] private float _minposition;
 
     private void Awake()
     {
@@ -24,4 +26,12 @@ public class PlayerMove : MonoBehaviour
         float y = _moveAction.ReadValue<float>();
         rb.linearVelocity = new Vector2(rb.linearVelocity.x,  y * _playerspeed);
     }
+
+    private void FixedUpdate()
+    {
+        Vector2 pos = rb.position;
+        pos.y = Mathf.Clamp(pos.y, _minposition, _maxposition);
+        rb.position = pos;
+    }
+
 }
